@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+}
+.navbar {
+  height: 150px;
+  width: 100%;
+}
+/* ***********************************uppernavbar************************************* */
+.uppernavbar {
+  position: relative;
+  bottom: 10px;
+}
+.uppernavbar > .left > img {
+  height: 85px;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.uppernavbar > .left {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 110px;
+}
+.uppernavbar > .right {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 60px;
+  right: 160px;
+  gap: 10px;
+}
+.uppernavbar > .right > button {
+
+  background-color: red;
+  border-radius: 5px;
+  font-size: 17px;
+  padding-left: 17px;
+  padding-right: 17px;
+  border: none;
+}
+.uppernavbar > .right > select {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+/* ***********************************lowernavbar************************************* */
+.lowernavbar {
+  height: 50px;
+  width: 35%;
+  border-radius: 30px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  position: relative;
+  left: 485px;
+}
+.lowernavbar > a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ***************************************banner************************************* */
+.banner {
+  height: 100vh; /* Full-screen background */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), black),
+    url("./background.jpg"); /* Ensure correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Netflix-like transparency */
+}
+
+/*****************************************content*************************************  */
+.banner > .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.content > h1 {
+  font-size: 60px;
+  margin-bottom: 0px;
+  z-index: 1;
+}
+.content > h2 {
+  font-size: 60px;
+  margin-top: 0px;
+  z-index: 1;
+}
+.content > h3 {
+  position: relative;
+  bottom: 40px;
+  font-size: 22px;
+  margin-top: 0px;
+}
+.content > button {
+  background-color: red;
+  border-radius: 5px;
+  font-size: 22px;
+  padding: 15px;
+  z-index: 1;
+  position: relative;
+  bottom: 25px;
+}
+
+/* **********************************carousel************************************* */
+.carousel {
+  background-color: black;
+  height: 22rem;
+  position: relative;
+  bottom: 2rem;
+}
+.carouselcontent {
+  margin-left: 8rem;
+}
+.carouselcontent > h1 {
+  font-size: 2rem;
+}
+.carouselimages {
+  display: flex;
+  position: relative;
+  right: 3%;
+}
+.carouselimages > span {
+  font-size: 7rem;
+  position: relative;
+  left: 4%;
+  margin-top: 7%;
+  font-size: 110px; /* Adjust based on design */
+  font-family: "Arial Black", Impact, sans-serif;
+  color: black; /* Main text color */
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,2px 2px 0 white; /* Creates the white outline */
+}
+
+.carouselimages > img {
+  border: 2px solid black;
+  border-radius: 5%;
+  height: 15rem;
+}
+
+/* **********************************plan************************************* */
+#planshead {
+  margin-left: 8%;
+  margin-top: -10px;
+}
+.plancontent {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  height: 30rem;
+  margin-top: -3rem;
+}
+.plancontent > div{
+  height: 23rem;
+  border-radius: 5%;
+  padding-left: 2%;
+  padding-right: 4%;
+  width: 12rem;
+}
+.cards h3{
+  font-size: 35px;
+}
+.cards h4{
+  font-size: 25px;
+}
+.cards p{
+  font-size: 15px;
+}
+.cards h5{
+  font-size: 25px;
+}
+#mobile {
+  background: linear-gradient(to bottom, #112D55, #225184);
+}
+#basic {
+  background: linear-gradient(to bottom, #0C1B32, #1E3A64);
+}
+#standard {
+  background: linear-gradient(to bottom, #3B1F49, #654D8F);
+}
+#premium {
+  background: linear-gradient(to bottom, #531C2F, #9B3258);
+}
+
+/* ******************************************reasons to join************************************* */ 
+.reasons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6%;
+  height: 60%;
+  width: 87%;
+  position: relative;
+  bottom: 2rem;
+}
+.reasontojoin > h1{
+  margin-left: 7%;
+  font-size: 2rem;
+}
+.card{
+  background: linear-gradient(149deg, #14162B 6.96%, #1A1332 40.17%, #25122D 73.39%);
+  border-radius: 5%;
+  width: 21rem;
+  height: 15rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.card svg{
+  position: relative;
+  left: 12.2rem;
+  top: 3.5rem;
+}
+.reasontojoin h2{
+  font-size: 22px;
+}
+.reasontojoin p{
+  font-size: 16px;
+}
+
+/*******************************************frequently aked questions************************************ */
+.faq-container {
+  width: 85%;
+  color: white;
+  margin-left: 7%;
+}
+.faq-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.faq-item {
+  background-color: #222;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.faq-item input {
+  display: none;
+}
+.faq-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #333;
+}
+.faq-label:hover {
+  background-color: #444;
+}
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #222;
+  padding: 0 15px;
+}
+.faq-item input:checked ~ .faq-content {
+  max-height: 200px;
+  padding: 30px;
+}
+
+/*************************************finish sign up*********************************************/
+#signup{
+  background-color: red;
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 7%;
+  border: none;
+}
+/* *****************************************footer************************************* */
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 3rem;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+}
+.box a{
+  color: white;
+  margin-bottom: 1rem;
+}
+footer p {
+  margin-left: 7%;
+  margin-top: 4rem;
+}
+footer select{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  font-size: 1rem;
+  margin-left: 7%;
+  margin-top: 2%; 
+}
